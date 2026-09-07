@@ -1,0 +1,103 @@
+:root {
+  --bg: #f6f3eb;
+  --bg-warm: #ecead4;
+  --bg-deep: #e0ddc7;
+  --ink: #0f0f0f;
+  --ink-soft: #5a5a55;
+  --mint: #c8ecc8;
+  --mint-light: #dcf5dc;
+  --mint-deep: #95c598;
+  --yellow: #fbc536;
+  --yellow-light: #ffd96a;
+  --yellow-deep: #d99c10;
+  --purple: #dcd0ee;
+  --purple-light: #ece2f8;
+  --purple-deep: #ab9bd0;
+  --black: #1a1a1a;
+  --invert-degree: 0;
+}
+
+/* Dark Mode Variables Override */
+body.dark-mode {
+  --bg: #121210;
+  --bg-warm: #1c1c18;
+  --bg-deep: #252520;
+  --ink: #f5f5f0;
+  --ink-soft: #aaaaa0;
+  --mint: #345c36;
+  --mint-light: #447547;
+  --mint-deep: #234025;
+  --yellow: #a67c1e;
+  --yellow-light: #cc9c31;
+  --yellow-deep: #7a5813;
+  --purple: #564870;
+  --purple-light: #6a5a87;
+  --purple-deep: #3d3252;
+  --black: #f5f5f0;
+  --invert-degree: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  font-family: "Manrope", sans-serif;
+  color: var(--ink);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  cursor: none;
+  line-height: 1.5;
+  transition:
+    background 0.4s ease,
+    color 0.4s ease;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 240 240' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/></svg>");
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: 200;
+  mix-blend-mode: multiply;
+}
+
+.ambient-1 {
+  position: fixed;
+  top: 10%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(
+    circle,
+    rgba(251, 197, 54, 0.1) 0%,
+    transparent 60%
+  );
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ambient-2 {
+  position: fixed;
+  bottom: -10%;
+  left: -5%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(
+    circle,
+    rgba(220, 208, 238, 0.18) 0%,
+    transparent 60%
+  );
+  border-radius: 50%;
+}
