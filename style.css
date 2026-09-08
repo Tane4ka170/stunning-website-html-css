@@ -181,6 +181,13 @@ body::before {
   border-radius: 12px;
   width: 42px;
   height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: none;
+  color: var(--ink);
+  transition: all 0.3s ease;
+  padding: 0;
 }
 .sun-icon {
 }
