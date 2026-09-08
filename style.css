@@ -173,6 +173,11 @@ body::before {
 .header-nav a:hover {
   color: var(--ink);
 }
+.header-actions {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
 
 /* Theme Toggle */
 .theme-toggle-btn {
@@ -189,9 +194,44 @@ body::before {
   transition: all 0.3s ease;
   padding: 0;
 }
-.sun-icon {
+.theme-toggle-btn:hover {
+  transform: translateY(-2px);
+  background: var(--bg-warm);
 }
-.moon-icon {
+.theme-toggle-btn .moon-icon {
+  display: none;
 }
+body.dark-mode .theme-toggle-btn .sun-icon {
+  display: none;
+}
+body.dark-mode .theme-toggle-btn .moon-icon {
+  display: block;
+}
+
 .header-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px;
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+  background: transparent;
+  border: 1.5px solid var(--ink);
+  border-radius: 12px;
+  cursor: none;
+  text-decoration: none;
+  transition: all 0.3s;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.header-btn:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 1px 4px,
+    rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+.header-btn:active {
+  transform: translateY(4px);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
