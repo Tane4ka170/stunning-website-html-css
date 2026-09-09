@@ -44,3 +44,32 @@ themeToggle.addEventListener("click", () => {
   }
   localStorage.setItem("theme", theme);
 });
+
+// Hamburger menu
+const hamburgerBtn = document.getElementById("hamburgerBtn");
+const mobileNavOverlay = document.getElementById("mobileNavOverlay");
+const mobileNavClose = document.getElementById("mobileNavClose");
+
+function closeMobileNav() {
+  mobileNavOverlay.classList.remove("open");
+  mobileNavOverlay.classList.remove("open");
+  document.body.style.overflow = "";
+}
+
+if (hamburgerBtn && mobileNavOverlay) {
+  hamburgerBtn.addEventListener("click", () => {
+    const isOpen = hamburgerBtn.classList.toggle("open");
+    mobileNavOverlay.classList.toggle("open", isOpen);
+    document.body.style.overflow = isOpen ? "hidden" : "";
+  });
+
+  // Close button inside overlay
+  if (mobileNavClose) {
+    mobileNavClose.addEventListener("click", closeMobileNav);
+  }
+
+  // Close on nav link click
+  mobileNavOverlay.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", closeMobileNav);
+  });
+}
