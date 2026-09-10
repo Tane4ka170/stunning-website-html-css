@@ -77,4 +77,46 @@ if (hamburgerBtn && mobileNavOverlay) {
 // Svg line lengths
 document.querySelectorAll(".constellation-lines path").forEach((path) => {
   const length = path.getTotalLength();
+  path.style.strokeDasharray = length;
+  path.style.strokeDashoffset = length;
 });
+
+// Page load
+const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+
+tl.to(".site-header", { opacity: 1, duration: 0.8 }, 0)
+  .to(
+    ".title-inner",
+    { y: 0, duration: 1.1, stagger: 0.08, ease: "power4.out" },
+    0.2,
+  )
+  .to(".hero-desc", { opacity: 1, duration: 0.8 }, 0.9)
+  .from(".hero-desc", { y: 20, duration: 0.8 }, 0.9)
+  .to(".cta-btn", { opacity: 1, duration: 0.7 }, 1.0)
+  .from(".cta-btn", { y: 20, duration: 0.7 }, 1.0)
+  .to(
+    ".tile",
+    {
+      opacity: 1,
+      scale: 1,
+      duration: 1.2,
+      stagger: { each: 0.07, from: "center" },
+      ease: "elastic.out(1, 0.6)",
+    },
+    0.5,
+  )
+  .from(
+    ".tile",
+    {
+      scale: 0,
+      duration: 1.2,
+      stagger: { each: 0.07, from: "center" },
+      ease: "elastic.out(1, 0.6)",
+    },
+    0.5,
+  )
+  .to(
+    ".constellation-lines path",
+    { strokeDashoffset: 0, duration: 1.5, stagger: 0.06, ease: "power2.inOut" },
+    0.8,
+  );
