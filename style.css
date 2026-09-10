@@ -519,11 +519,9 @@ body.dark-mode .theme-toggle-btn .moon-icon {
   transform-style: preserve-3d;
   animation: tile-float var(--dur, 5s) ease-in-out infinite var(--delay, 0s);
 }
-.size-pill {
-}
-.black {
-}
 .tile-lock {
+  top: 0;
+  left: calc(50% - 32px);
 }
 .tile-inner {
   width: 100%;
@@ -556,37 +554,191 @@ body.dark-mode .theme-toggle-btn .moon-icon {
   display: block;
 }
 .tile.mint .tile-inner {
-  background: linear-gradient(165deg, var(--mint-light) 0%, var());
+  background: linear-gradient(
+    165deg,
+    var(--mint-light) 0%,
+    var(--mint) 50%,
+    var(--mint-deep) 100%
+  );
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  color: var(--ink);
 }
-.size-main {
+.tile.yellow .tile-inner {
+  background: linear-gradient(
+    165deg,
+    var(--yellow-light) 0%,
+    var(--yellow) 50%,
+    var(--yellow-deep) 100%
+  );
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  color: var(--ink);
 }
-.mint {
+.tile.purple .tile-inner {
+  background: linear-gradient(
+    165deg,
+    var(--purple-light) 0%,
+    var(--purple) 50%,
+    var(--purple-deep) 100%
+  );
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  color: var(--ink);
+}
+.tile.black .tile-inner {
+  background: linear-gradient(
+    165deg,
+    var(--bg-deep) 0%,
+    var(--bg-warm) 50%,
+    var(--bg) 100%
+  );
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  color: var(--ink);
+  border: 1.5px solid var(--ink);
+}
+.tile.size-main {
+  width: 142px;
+  height: 118px;
+}
+.tile.size-big {
+  width: 156px;
+  height: 132px;
+}
+.tile.size-pill {
+  width: 64px;
+  height: 64px;
+}
+.tile.size-pill .tile-inner {
+  border-radius: 50%;
 }
 .tile-expand {
+  top: 95px;
+  left: 95px;
 }
-.yellow {
-}
+
 .tile-chart {
-}
-.purple {
+  top: 95px;
+  left: 365px;
 }
 .tile-cloud {
-}
-.size-big {
+  top: 245px;
+  left: 5px;
 }
 .tile-db {
+  top: 240px;
+  left: 222px;
 }
 .tile-thumb {
+  top: 245px;
+  left: 455px;
 }
 .tile-cursor {
+  top: 405px;
+  left: 45px;
 }
 .tile-person {
+  top: 395px;
+  left: 145px;
 }
 .tile-globe {
+  top: 395px;
+  left: 315px;
 }
 .tile-thumbpill {
+  top: 405px;
+  left: 495px;
 }
 .tile-hex {
+  top: 545px;
+  left: 230px;
+}
+@keyframes tile-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(var(--float, -8px));
+  }
+}
+.tile-lock {
+  --dur: 4s;
+  --delay: 0s;
+  --float: -6px;
+}
+.tile-expand {
+  --dur: 5.5s;
+  --delay: 0.4s;
+  --float: -10px;
+}
+.tile-chart {
+  --dur: 5s;
+  --delay: 0.8s;
+  --float: -10px;
+}
+.tile-cloud {
+  --dur: 6s;
+  --delay: 1.2s;
+  --float: -12px;
+}
+.tile-db {
+  --dur: 4.5s;
+  --delay: 0.2s;
+  --float: -7px;
+}
+.tile-thumb {
+  --dur: 5.5s;
+  --delay: 0.6s;
+  --float: -10px;
+}
+.tile-cursor {
+  --dur: 4s;
+  --delay: 1s;
+  --float: -10px;
+}
+.tile-person {
+  --dur: 5s;
+  --delay: 0.3s;
+  --float: -9px;
+}
+.tile-globe {
+  --dur: 5.5s;
+  --delay: 0.7s;
+  --float: -11px;
+}
+.tile-thumbpill {
+  --dur: 4.5s;
+  --delay: 0.5s;
+  --float: -7px;
+}
+.tile-hex {
+  --dur: 6s;
+  --delay: 0.9s;
+  --float: -10px;
 }
 .sparkle {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  bottom: 30px;
+  right: 30px;
+  color: var(--ink);
+  animation:
+    spin 8s linear infinite,
+    sparkleFloat 4s ease-in-out infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(36deg);
+  }
+}
+@keyframes sparkleFloat {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 0 -10px;
+  }
 }
