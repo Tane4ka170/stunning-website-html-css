@@ -73,3 +73,8 @@ if (hamburgerBtn && mobileNavOverlay) {
     link.addEventListener("click", closeMobileNav);
   });
 }
+
+// Svg line lengths
+document.querySelectorAll(".constellation-lines path").forEach((path) => {
+  const length = path.getTotalLength();
+});
