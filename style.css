@@ -369,6 +369,9 @@ body.dark-mode .theme-toggle-btn .moon-icon {
   .mobile-nav {
     gap: 24px;
   }
+  .header-btn {
+    display: none;
+  }
 }
 
 /* Hero left*/
@@ -893,7 +896,7 @@ body.dark-mode .theme-toggle-btn .moon-icon {
   }
   .tile-thumb {
     top: 168px;
-    left: 310px;
+    left: 260px;
   }
   .tile-cursor {
     top: 272px;
@@ -904,5 +907,34 @@ body.dark-mode .theme-toggle-btn .moon-icon {
     left: 98px;
   }
   .tile-globe {
+    top: 264px;
+    left: 212px;
   }
+  .tile-thumbpill {
+    top: 272px;
+    left: 310px;
+  }
+  .tile-hex {
+    top: 372px;
+    left: 154px;
+  }
+}
+
+/* Workspace */
+.workspace {
+  padding: 20px 56px;
+}
+.workspace-label {
+}
+.features {
+}
+.fpill {
+}
+.round {
+}
+.wide-yellow {
+}
+.wide-purple {
+}
+.learn-more {
 }
