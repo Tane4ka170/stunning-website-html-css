@@ -884,23 +884,25 @@ body.dark-mode .theme-toggle-btn .moon-icon {
     left: 252px;
   }
   .tile-cloud {
-    top: 138px;
-    left: 2px;
+    top: 168px;
+    left: 0;
   }
   .tile-db {
-    top: 134px;
-    left: 126px;
+    top: 164px;
+    left: 148px;
   }
   .tile-thumb {
-    top: 138px;
-    left: 286px;
+    top: 168px;
+    left: 310px;
   }
   .tile-cursor {
-    top: 224px;
+    top: 272px;
     left: 20px;
   }
   .tile-person {
-    top: 216px;
-    left: 86px;
+    top: 264px;
+    left: 98px;
+  }
+  .tile-globe {
   }
 }
