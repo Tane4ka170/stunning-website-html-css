@@ -784,8 +784,46 @@ body.dark-mode .theme-toggle-btn .moon-icon {
     width: 100%;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 380px) {
   .hero-title {
     font-size: 30px;
+  }
+}
+
+/* Hero right media queries */
+@media (max-width: 900px) {
+  .hero-right {
+    width: 100%;
+  }
+  .constellation {
+    width: 100%;
+    max-width: 560px;
+    height: 540px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 600px) {
+  .constellation {
+    height: 420px;
+  }
+  .tile.size-main {
+    width: 112px;
+    height: 94px;
+  }
+  .tile.size-big {
+    width: 126px;
+    height: 108px;
+  }
+  .tile.size-pill {
+    width: 52px;
+    height: 52px;
+  }
+  .tile-expand {
+    top: 96px;
+    left: 72px;
+  }
+}
+@media (max-width: 380px) {
+  .hero-right .hero-img {
   }
 }
