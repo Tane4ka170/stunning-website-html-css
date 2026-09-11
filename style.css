@@ -822,8 +822,85 @@ body.dark-mode .theme-toggle-btn .moon-icon {
     top: 96px;
     left: 72px;
   }
+  .tile-chart {
+    top: 96px;
+    left: 249px;
+  }
+  .tile-cloud {
+    top: 198px;
+    left: 2px;
+  }
+  .tile-db {
+    top: 194px;
+    left: 176px;
+  }
+  .tile-thumb {
+    top: 198px;
+    left: 366px;
+  }
+  .tile-cursor {
+    top: 324px;
+    left: 30px;
+  }
+  .tile-person {
+    top: 316px;
+    left: 116px;
+  }
+  .tile-globe {
+    top: 316px;
+    left: 252px;
+  }
+  .tile-thumbpill {
+    top: 324px;
+    left: 398px;
+  }
+  .tile-hex {
+    top: 438px;
+    left: 184px;
+  }
 }
 @media (max-width: 380px) {
-  .hero-right .hero-img {
+  .constellation {
+    height: 360px;
+  }
+  .tile.size-main {
+    width: 96px;
+    height: 80px;
+  }
+  .tile.size-big {
+    width: 108px;
+    height: 90px;
+  }
+  .tile.size-pill {
+    width: 44px;
+    height: 44px;
+  }
+  .tile-expand {
+    top: 64px;
+    left: 58px;
+  }
+  .tile-chart {
+    top: 64px;
+    left: 252px;
+  }
+  .tile-cloud {
+    top: 138px;
+    left: 2px;
+  }
+  .tile-db {
+    top: 134px;
+    left: 126px;
+  }
+  .tile-thumb {
+    top: 138px;
+    left: 286px;
+  }
+  .tile-cursor {
+    top: 224px;
+    left: 20px;
+  }
+  .tile-person {
+    top: 216px;
+    left: 86px;
   }
 }
