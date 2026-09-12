@@ -922,11 +922,21 @@ body.dark-mode .theme-toggle-btn .moon-icon {
 
 /* Workspace */
 .workspace {
-  padding: 20px 56px;
+  padding: 20px 56px 80px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  position: relative;
 }
 .workspace-label {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+  flex-shrink: 0;
 }
-.features {
+.features-pills {
+  display: flex;
 }
 .fpill {
 }
