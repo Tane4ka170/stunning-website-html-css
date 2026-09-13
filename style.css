@@ -1027,15 +1027,11 @@ body.dark-mode .theme-toggle-btn .moon-icon {
 }
 
 /* Shared utilities */
-.features-details-section {
-}
 .section-container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
-}
-.features-head {
 }
 .section-tag {
   display: inline-block;
@@ -1044,12 +1040,94 @@ body.dark-mode .theme-toggle-btn .moon-icon {
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
+  letter-spacing: 0.01em;
+  border: 1.5px solid var(--ink);
+  border-radius: 30px;
+  background: var(--bg-warm);
+  color: var(--ink);
+  margin-bottom: 20px;
+  transition:
+    background 0.4s ease,
+    border-color 0.4s ease,
+    color 0.4s ease;
 }
 .section-title {
-}
-.text-reveal {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+  margin-bottom: 20px;
 }
 .section-desc {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  max-width: 540px;
+  transition: color 0.4s ease;
+}
+.split-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+  margin-bottom: 64px;
+}
+.split-head .section-title {
+  margin-bottom: 0;
+  max-width: 600px;
+}
+.center-head {
+  text-align: center;
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.arrow-text-link {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.2s ease;
+}
+.arrow-text-link:hover {
+  transform: translateX(4px);
+}
+@media (max-width: 900px) {
+  .split-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .section-container {
+    padding: 0 16px;
+  }
+  .section-title {
+    font-size: clamp(26px, 7vw, 38px);
+  }
+  .split-head {
+    margin-bottom: 32px;
+  }
+}
+
+/* Features section */
+.features-details-section {
+}
+.features-head {
+}
+.text-reveal {
 }
 .features-cards-grid {
 }
