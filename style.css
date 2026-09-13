@@ -1030,10 +1030,20 @@ body.dark-mode .theme-toggle-btn .moon-icon {
 .features-details-section {
 }
 .section-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 .features-head {
 }
 .section-tag {
+  display: inline-block;
+  padding: 6px 14px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .section-title {
 }
