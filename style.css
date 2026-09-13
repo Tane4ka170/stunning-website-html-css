@@ -1124,14 +1124,37 @@ body.dark-mode .theme-toggle-btn .moon-icon {
 
 /* Features section */
 .features-details-section {
+  padding: 120px 0;
+  background: var(--bg);
+  transition: background 0.4s ease;
 }
-.features-head {
+.features-details-section .features-head {
+  margin-bottom: 64px;
 }
 .text-reveal {
 }
 .features-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
 }
 .feature-card3d {
+  background: var(--bg-warm);
+  border: 1.5px solid var(--ink);
+  border-radius: 28px;
+  padding: 40px 32px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.4s ease,
+    border-color 0.4s ease;
+}
+.feature-card3d:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 1px 4px,
+    rgb(51, 51, 51) 0px 0px 0px 3px;
 }
 .card3d-inner {
 }
