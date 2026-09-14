@@ -1163,12 +1163,56 @@ body.dark-mode .theme-toggle-btn .moon-icon {
   height: 48px;
   border-radius: 14px;
   border: 1.5px solid var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink);
+  margin-bottom: 28px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-.purple {
+.card3d-icon.purple {
+  color: var(--purple-light);
 }
 .card3d-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-top: 1.5px dashed var(--bg-deep);
+  padding-top: 20px;
 }
-.mint {
+.card3d-list li {
+  font-family: "Manrope", sans-serif;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-.yellow {
+.card3d-list li span {
+  font-family: "";
+}
+.card3d-icon.mint {
+  color: var(--mint-light);
+}
+.card3d-icon.yellow {
+  color: var(--yellow-light);
+}
+.feature-card3d h3 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin-bottom: 14px;
+}
+.feature-card3d p {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin-bottom: 24px;
+  transition: color 0.4s ease;
 }
