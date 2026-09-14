@@ -119,4 +119,6 @@ tl.to(".site-header", { opacity: 1, duration: 0.8 }, 0)
     ".constellation-lines path",
     { strokeDashoffset: 0, duration: 1.5, stagger: 0.06, ease: "power2.inOut" },
     0.8,
-  );
+  )
+  .to("workspace", { opacity: 1, duration: 0.8 }, 1.6)
+  .from(".fpill", { y: 3 });
