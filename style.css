@@ -1159,6 +1159,10 @@ body.dark-mode .theme-toggle-btn .moon-icon {
 .card3d-inner {
 }
 .card3d-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  border: 1.5px solid var(--ink);
 }
 .purple {
 }
