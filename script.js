@@ -121,4 +121,16 @@ tl.to(".site-header", { opacity: 1, duration: 0.8 }, 0)
     0.8,
   )
   .to("workspace", { opacity: 1, duration: 0.8 }, 1.6)
-  .from(".fpill", { y: 3 });
+  .from(
+    ".fpill",
+    {
+      y: 30,
+      scale: 0.5,
+      opacity: 0,
+      duration: 0.8,
+      stagger: 0.1,
+      ease: "back.out(1.6)",
+    },
+    1.6,
+  )
+  .from(".workspace-label", { y: 20, opacity: 0 });
