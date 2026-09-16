@@ -133,4 +133,15 @@ tl.to(".site-header", { opacity: 1, duration: 0.8 }, 0)
     },
     1.6,
   )
-  .from(".workspace-label", { y: 20, opacity: 0 });
+  .from(
+    ".workspace-label",
+    { y: 20, opacity: 0, duration: 0.6, stagger: 0.1 },
+    1.6,
+  );
+
+// Constellation 3d title
+const constellation = document.getElementById("constellation");
+const constellationInner = document.getElementById("constellationInner");
+constellation.addEventListener("mousemove", (e) => {
+  const rect = constellation.getBoundingClientRect;
+});
