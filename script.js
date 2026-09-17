@@ -143,5 +143,44 @@ tl.to(".site-header", { opacity: 1, duration: 0.8 }, 0)
 const constellation = document.getElementById("constellation");
 const constellationInner = document.getElementById("constellationInner");
 constellation.addEventListener("mousemove", (e) => {
-  const rect = constellation.getBoundingClientRect;
+  const rect = constellation.getBoundingClientRect();
+  const x = (e.clientX - rect.left) / rect.width - 0.5;
+  const y = (e.clientY - rect.top) / rect.height - 0.5;
+  gsap.to(constellationInner, {
+    rotationX: -y * 8,
+    rotationY: x * 12,
+    duration: 0.8,
+    transformPerspective: 1500,
+    ease: "power2.out",
+  });
+});
+constellation.addEventListener("mouseleave", () => {
+  gsap.to(constellationInner, {
+    rotationX: 0,
+    rotationY: 0,
+    duration: 1,
+    ease: "elastic.out(1, 0.5)",
+  });
+});
+
+// Scroll constellation parallax
+gsap.to(".constellation", {
+  y: 100,
+  scale: 0.92,
+  scrollTrigger: {
+    trigger: ".hero",
+    start: "top top",
+    end: "bottom top",
+    scrub: 1,
+  },
+});
+gsap.to(".hero-left", {
+  y: 60,
+  opacity: 0.4,
+  scrollTrigger: {
+    trigger: ".hero",
+    start: "top top",
+    end: "bottom top",
+    scrub: 1,
+  },
 });
