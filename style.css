@@ -1240,3 +1240,88 @@ body.dark-mode .card3d-list li span {
     font-size: 19px;
   }
 }
+
+/* Analytics|Detail rows */
+.analytics-features-section {
+  padding: 120px 0;
+  background: var(--bg);
+  border-bottom: 1.5px solid var(--ink);
+  transition: background 0.4s ease;
+}
+.section-container {
+}
+.split-head {
+}
+.section-tag {
+}
+.section-desc {
+}
+.features-detailed-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.detail-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+  background: var(--bg-warm);
+  border: 1.5px solid var(--ink);
+  border-radius: 28px;
+  padding: 48px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition:
+    background 0.4s ease,
+    border-color 0.4s ease;
+}
+.detail-row.reverse {
+  direction: rtl;
+}
+.detail-row.reverse .detail-meta {
+  direction: ltr;
+}
+.row-num {
+  display: block;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink-soft);
+  margin-bottom: 12px;
+}
+.badge-stack {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.pill-badge {
+  font-family: "JetBrains Mono", monospace;
+}
+.detail-visual-stub {
+}
+.purple-patter {
+}
+.window-top {
+}
+.top {
+}
+.window-body {
+}
+.datail-meta h3 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 16px;
+}
+.detail-meta p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin-bottom: 28px;
+}
+
+.yellow-patter {
+}
+.terminal-err {
+}
