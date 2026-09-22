@@ -1296,6 +1296,15 @@ body.dark-mode .card3d-list li span {
 }
 .pill-badge {
   font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ink);
+  background: var(--bg-deep);
+  padding: 4px 8px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 }
 .detail-visual-stub {
 }
