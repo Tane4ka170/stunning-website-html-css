@@ -1300,23 +1300,49 @@ body.dark-mode .card3d-list li span {
   font-weight: 600;
   color: var(--ink);
   background: var(--bg-deep);
-  padding: 4px 8px;
-  border-radius: 14px;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
+  padding: 6px 12px;
+  border: 1px solid var(--ink);
+  border-radius: 8px;
 }
 .detail-visual-stub {
+  border: 1.5px solid var(--ink);
+  border-radius: 16px;
+  height: 220px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 .purple-patter {
+  background: linear-gradient(135deg, var(--purple-deep), var(--purple-light));
 }
 .window-top {
+  height: 32px;
+  border-bottom: 1.5px solid var(--ink);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  gap: 6px;
 }
-.top {
+.window-top .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1.5px solid var(--ink);
+  background: var(--bg);
 }
 .window-body {
+  padding: 24px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.datail-meta h3 {
+.detail-meta h3 {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 28px;
   font-weight: 700;
@@ -1331,6 +1357,7 @@ body.dark-mode .card3d-list li span {
 }
 
 .yellow-patter {
+  background: linear-gradient(135deg, var(--yellow-deep), var(--yellow-light));
 }
 .terminal-err {
 }
