@@ -1402,3 +1402,39 @@ body.dark-mode .card3d-list li span {
     font-size: 21px;
   }
 }
+
+/* Integrations section */
+.integrations-grid-section {
+  padding: 100px 56px;
+  background: var(--bg-warm);
+  border-radius: 48px;
+  margin: 40px 24px;
+  position: relative;
+  z-index: 5;
+  transition: background 0.4s ease;
+}
+.section-container {
+}
+.center-head {
+  max-width: 580px;
+  margin-bottom: 56px;
+}
+.section-tag {
+}
+.section-title {
+}
+.ecosystem-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+}
+.eco-card {
+}
+.int-card {
+}
+.eco-icon {
+}
+.mint {
+}
+.purple {
+}
