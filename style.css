@@ -1501,3 +1501,33 @@ body.dark-mode .card3d-list li span {
     padding: 28px;
   }
 }
+
+/* Testimonials */
+.testimonial-section {
+  padding: 120px 0;
+  background: var(--bg-deep);
+  border-top: 1.5px solid var(--ink);
+  border-bottom: 1.5px solid var(--ink);
+}
+.section-container {
+}
+.quote-container {
+}
+.quote-mark {
+}
+.quote-text {
+}
+.quote-author {
+}
+.author-avatar-stub {
+}
+.author-info {
+}
+.metric-bar {
+}
+.metric-item {
+}
+.metric-num {
+}
+.metric-label {
+}
