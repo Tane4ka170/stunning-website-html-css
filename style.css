@@ -1561,10 +1561,73 @@ body.dark-mode .card3d-list li span {
   color: var(--ink-soft);
 }
 .metric-bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  border: 1.5px solid var(--ink);
+  border-radius: 24px;
+  background: var(--bg);
+  padding: 40px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition:
+    background 0.4s ease,
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
 }
 .metric-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.metric-item:not(:last-child) {
+  border-right: 1.5px solid var(--bg-deep);
 }
 .metric-num {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: clamp(32px, 3.5vw, 48px);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  line-height: 1;
 }
 .metric-label {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 900px) {
+  .testimonial-section {
+    padding: 80px 0;
+  }
+  .quote-container {
+    margin-bottom: 48px;
+  }
+  .metric-bar {
+    grid-template-columns: repeat(1fr);
+    gap: 28px;
+    padding: 28px 20px;
+  }
+  .metric-item:not(:last-child) {
+    border-right: none;
+    border-bottom: 1.5px solid var(--bg-deep);
+    padding-bottom: 24px;
+  }
+}
+@media (max-width: 600px) {
+  .testimonial-section {
+    padding: 64px 16px;
+  }
+  .metric-bar {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+    padding: 24px;
+  }
+  .metric-item {
+    border-right: none;
+  }
 }
