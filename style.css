@@ -1620,14 +1620,12 @@ body.dark-mode .card3d-list li span {
 }
 @media (max-width: 600px) {
   .testimonial-section {
-    padding: 64px 16px;
+    padding: 64px 0;
   }
-  .metric-bar {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 16px;
-    padding: 24px;
+  .quote-mark {
+    font-size: 80px;
   }
-  .metric-item {
-    border-right: none;
+  .quote-text {
+    font-size: clamp(14px, 4vw, 22px);
   }
 }
