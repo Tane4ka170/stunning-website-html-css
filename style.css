@@ -1632,20 +1632,35 @@ body.dark-mode .card3d-list li span {
 
 /* Pricing section */
 .pricing-section {
-}
-.section-container {
+  padding: 120px 0;
+  background: var(--bg);
+  transition: background 0.4s ease;
 }
 .pricing-head {
-}
-.section-tag {
-}
-.section-title {
-}
-.section-desc {
+  text-align: center;
+  margin-bottom: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  align-items: stretch;
 }
 .pricing-card {
+  background: var(--bg-warm);
+  border: 1.5px solid var(--ink);
+  border-radius: 28px;
+  padding: 48px 36px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.4s ease;
 }
 .pricing-value {
 }
