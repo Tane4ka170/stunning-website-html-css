@@ -1690,8 +1690,24 @@ body.dark-mode .card3d-list li span {
 }
 .pricing-value .period {
   font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  color: var(--ink-soft);
+  font-weight: 500;
+  margin-left: 4px;
+}
+.pricing-head p {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  color: var(--ink-soft);
+  margin-bottom: 32px;
+  min-height: 44px;
 }
 .pricing-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
 }
 .pricing-btn {
 }
