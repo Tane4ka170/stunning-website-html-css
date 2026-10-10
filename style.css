@@ -1708,10 +1708,40 @@ body.dark-mode .card3d-list li span {
   margin-bottom: 40px;
   display: flex;
   flex-direction: column;
+  gap: 16px;
+  flex-grow: 1;
+}
+.pricing-features li {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink);
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.pricing-features li span {
+  color: var(--mint-deep);
+  font-weight: 700;
+  font-family: "JetBrains Mono", monospace;
+}
+body.dark-mode .pricing-features li span {
+  color: var(--mint);
 }
 .pricing-btn {
+  display: block;
+  text-align: center;
+  padding: 16px 24px;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 14px;
+  border: 1.5px solid var(--ink);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
-.regular {
+.pricing-btn.regular {
+  background: transparent;
 }
 .featured {
 }
