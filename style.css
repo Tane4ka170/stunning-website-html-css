@@ -1742,12 +1742,19 @@ body.dark-mode .pricing-features li span {
 }
 .pricing-btn.regular {
   background: transparent;
+  color: var(--ink);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.pricing-btn.regular:hover {
+  background: var(--bg-deep);
+  transform: translateY(2px);
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 1px 4px,
+    rgb(51, 51, 51) 0px 0px 0px 3px;
 }
 .featured {
 }
 .card-badge {
 }
-.price-head {
-}
-.primary {
+.pricing-btn.primary {
 }
